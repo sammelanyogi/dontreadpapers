@@ -9,7 +9,7 @@ import (
 func main() {
 	server := gin.Default()
 	server.GET("/", func(c *gin.Context) {
-		c.IndentedJSON(http.StatusOK, gin.H{
+		c.JSON(http.StatusOK, gin.H{
 			"status": "ok",
 		})
 	})
